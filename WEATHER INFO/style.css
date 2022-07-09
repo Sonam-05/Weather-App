@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container::before{
+    content: "";
+    background-image: url("./images/cool-background.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.weather{
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid grey;
+    box-shadow: 0px 2px 4px 1px ;
+}
+
+.weather1{
+    text-align: center;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+.weather1 h1{
+    font-size: 2rem;
+}
+
+.weather1 p{
+    font-size: 1.2rem;
+    letter-spacing: 0.09rem;
+    padding: 0.5rem 1rem;
+    font-variant: small-caps;
+    font-weight: 500;
+}
+
+.weather2{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.country{
+    font-weight: 500;
+    letter-spacing: 0.06rem;
+}
+
+.time{
+    padding: 8px 0px;
+    font-weight: 500;
+}
+
+.dateInfo{
+    font-weight: 500;
+}
+
+.weather3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weatherImage{
+    width: 3.5rem;
+}
+
+.weatherRegion{
+    letter-spacing: 0.03rem;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(86, 84, 84, 0.311);
+    border-radius: 50px 50px 0 0 ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    width: 50%;
+}
+
+#searchFeild{
+    padding: 0.6rem;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(235, 229, 229, 0.311);
+    box-shadow: 0px 2px 3px;
+    outline: none;
+    width: 95%;
+    text-align: center;
+    z-index: 3;
+    color: white;
+}
+
+#submitBtn{
+    padding: 0.6rem;
+    font-size: 15px;
+    border-radius: 25px 0px 0px 25px;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+#submitBtn:hover{
+    color: black;
+    background-color: rgba(21, 82, 94, 0.746);
+}
+
+.heading{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(86, 84, 84, 0.311);
+        border-radius: 0 0 50px 50px ;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        color: white;
+        font-variant: small-caps;
+        letter-spacing: 0.5rem;
+        text-shadow: 3px 2px grey;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+}
